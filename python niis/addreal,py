@@ -1,0 +1,4 @@
+print("enter two number")
+a=float(intput())
+b=float(intput())
+print("add",a+b)

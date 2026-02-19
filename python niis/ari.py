@@ -1,0 +1,5 @@
+print(30**8)
+print(30*7)
+print(10/3)
+print(10//3)
+print(9%4)

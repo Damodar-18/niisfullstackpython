@@ -1,0 +1,7 @@
+"""identifier
+identifire id define to word
+this word to use to name of the variable,function,array...
+no start with digit
+space not allow 
+case sensitive a A
+predefine word not allow (keyword)
