@@ -1,0 +1,6 @@
+n="damodar"
+r=4
+m=8.45
+print("my mame=",n)
+print("roll no=",r)
+print("mark=",m)
