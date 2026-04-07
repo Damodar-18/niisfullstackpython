@@ -1,0 +1,5 @@
+f=open("damodar.text","a+")
+f.write("gita was  verygood cooker")
+f.seek(1)
+print(f.read())
+f.close()
