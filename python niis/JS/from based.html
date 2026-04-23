@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Simple Interest (Form)</h3>
+
+<form onsubmit="calculateSI(event)">
+    Principal: <input type="number" id="p" required><br><br>
+    Rate (%): <input type="number" id="r" required><br><br>
+    Time (years): <input type="number" id="t" required><br><br>
+
+    <input type="submit" value="Calculate">
+</form>
+
+<p id="result"></p>
+
+<script>
+function calculateSI(event) {
+    event.preventDefault(); // stop page reload
+
+    let p = Number(document.getElementById("p").value);
+    let r = Number(document.getElementById("r").value);
+    let t = Number(document.getElementById("t").value);
+
+    let si = (p * r * t) / 100;
+
+    document.getElementById("result").innerHTML =
+        "Simple Interest = " + si;
+}
+</script>
+
+</body>
+</html>

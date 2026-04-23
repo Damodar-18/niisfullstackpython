@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<script>
+function calculateSI()
+{
+    var p = parseFloat(document.getElementById("p").value);
+    var r = parseFloat(document.getElementById("r").value);
+    var t = parseFloat(document.getElementById("t").value);
+
+    if (isNaN(p) || isNaN(r) || isNaN(t)) {
+        alert("Please enter valid numbers");
+    } else {
+        var si = (p * r * t) / 100;
+        document.getElementById("result").value = si;
+    }
+}
+</script>
+
+<form>
+    Principal: <input type="text" id="p"><br><br>
+    Rate (%): <input type="text" id="r"><br><br>
+    Time (years): <input type="text" id="t"><br><br>
+
+    Simple Interest: <input type="text" id="result" readonly><br><br>
+
+    <input type="button" value="Calculate" onclick="calculateSI()">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>

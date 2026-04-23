@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<script>
+function sumDigits() {
+    var num = parseInt(document.getElementById("num").value);
+    var sum = 0;
+
+    if (isNaN(num)) {
+        alert("Please enter a valid number");
+        return;
+    }
+
+    while (num > 0) {
+        var digit = num % 10;   // get last digit
+        sum = sum + digit;      // add to sum
+        num = Math.floor(num / 10); // remove last digit
+    }
+
+    document.getElementById("result").value = sum;
+}
+</script>
+
+<form>
+    Enter Number: <input type="text" id="num"><br><br>
+    Sum of Digits: <input type="text" id="result" readonly><br><br>
+
+    <input type="button" value="Calculate" onclick="sumDigits()">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
